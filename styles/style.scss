@@ -101,6 +101,87 @@ body {
             }
 
         }
+    }
+    #projects {
+        .container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+
+            h1 {
+                text-align: center;
+                text-decoration: underline;
+                margin: 30px;
+            }
+            .flex-column-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                border-bottom: solid 2px black;
+                padding-bottom: 50px;
+
+
+                .flex-column {
+                    align-self: center;
+                    justify-content: space-between;
+                    text-align: left;
+                    border: solid 3px #000000;
+                    min-width: 220px;
+                    height: 300px;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    
+                    display: flex;
+                    flex-direction: column;
+                    transition: ease-in-out 0.5s;
+                    box-shadow: 2px 18px 34px -8px rgba(0,0,0,0.75);
+
+                    .project-image {
+                        background-image: url("/img/pokedex.PNG");
+                        background-position: center;
+                        background-size: cover;
+                        
+                        height: 100%;
+                        border-bottom: solid 1px #000000;
+                        h3 {
+                            text-align: center;
+
+                        }
+
+                    }
+
+                    .project-description {
+                        text-align: center;
+                        border-top: solid 1px #000000;
+                        width: 100%;
+                        padding: 10px;
+                        h3 {
+                            margin: 5px;
+
+                        }
+                        a {
+                            text-decoration: none;
+                            color: inherit;
+
+                        }
+                        .icon {
+                            margin: 5px;
+                            font-size: 1.5em;
+                        }
+
+                    }
+                }
+                .flex-column:hover {
+                    transition: ease-in-out 0.5s;
+                    transform: scale(1.1);
+                }
+                
+                
+            
+            
+            }
+
+        }
     }   
 }
 
@@ -143,6 +224,23 @@ body {
         .flex-column-wrapper {
             flex-direction: column;
             align-items: center;
+        }
+    }
+
+}
+
+@media screen and (max-width: 968px) {    
+    #projects {
+        .flex-column-wrapper {
+            flex-direction: column;
+            align-items: center;
+            .flex-column {
+                margin: 20px;
+                width: 60%;
+
+
+            }
+
         }
     }
 

@@ -118,6 +118,93 @@ body #home .container .flex-column-wrapper .flex-column .home-image img {
   height: auto;
 }
 
+body #projects .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body #projects .container h1 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 30px;
+}
+
+body #projects .container .flex-column-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: solid 2px black;
+  padding-bottom: 50px;
+}
+
+body #projects .container .flex-column-wrapper .flex-column {
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  border: solid 3px #000000;
+  min-width: 220px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  -webkit-box-shadow: 2px 18px 34px -8px rgba(0, 0, 0, 0.75);
+          box-shadow: 2px 18px 34px -8px rgba(0, 0, 0, 0.75);
+}
+
+body #projects .container .flex-column-wrapper .flex-column .project-image {
+  background-image: url("/img/pokedex.PNG");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  border-bottom: solid 1px #000000;
+}
+
+body #projects .container .flex-column-wrapper .flex-column .project-image h3 {
+  text-align: center;
+}
+
+body #projects .container .flex-column-wrapper .flex-column .project-description {
+  text-align: center;
+  border-top: solid 1px #000000;
+  width: 100%;
+  padding: 10px;
+}
+
+body #projects .container .flex-column-wrapper .flex-column .project-description h3 {
+  margin: 5px;
+}
+
+body #projects .container .flex-column-wrapper .flex-column .project-description a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body #projects .container .flex-column-wrapper .flex-column .project-description .icon {
+  margin: 5px;
+  font-size: 1.5em;
+}
+
+body #projects .container .flex-column-wrapper .flex-column:hover {
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 @media screen and (max-width: 550px) {
   body .nav .hamburger {
     display: block;
@@ -154,6 +241,22 @@ body #home .container .flex-column-wrapper .flex-column .home-image img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  #projects .flex-column-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #projects .flex-column-wrapper .flex-column {
+    margin: 20px;
+    width: 60%;
   }
 }
 /*# sourceMappingURL=style.css.map */
