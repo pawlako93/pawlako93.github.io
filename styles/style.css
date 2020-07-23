@@ -20,7 +20,8 @@ body .nav .navbar {
       justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: solid 2px black;
+  border-bottom: solid 2px #000000;
+  background-color: #ffffff;
 }
 
 body .nav .navbar a {
@@ -38,11 +39,87 @@ body .nav .navbar a:hover {
 }
 
 body .nav .toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1200px;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: solid 2px black;
+  background-color: #ffffff;
+}
+
+body .nav .toggle a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body .nav .toggle a .nav-link {
+  padding: 10px;
+}
+
+body .nav .toggle a:hover {
+  background-color: black;
+  color: white;
+}
+
+body .nav .hamburger {
   display: none;
 }
 
+body .nav-placeholder {
+  position: static;
+  height: 70px;
+}
+
+body #home {
+  height: auto;
+  min-height: 0;
+  padding-top: 0;
+}
+
+body #home .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body #home .container .flex-column-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: solid 2px black;
+}
+
+body #home .container .flex-column-wrapper .flex-column {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+  text-align: left;
+}
+
+body #home .container .flex-column-wrapper .flex-column .home-image {
+  border: double 2px #000000;
+  max-width: 600px;
+}
+
+body #home .container .flex-column-wrapper .flex-column .home-image img {
+  vertical-align: middle;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
 @media screen and (max-width: 550px) {
-  body .nav .toggle {
+  body .nav .hamburger {
     display: block;
     text-align: center;
     line-height: 40px;
@@ -55,13 +132,28 @@ body .nav .toggle {
     -webkit-transition: all .1s linear;
     transition: all .1s linear;
   }
-  body .nav .toggle:hover {
+  body .nav .hamburger:hover {
     background: #ffffff;
     color: #000000;
     border-bottom: solid 2px #000000;
   }
   body .nav .navbar {
     display: none;
+  }
+  body #home {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .flex-column-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
