@@ -197,35 +197,35 @@ body {
                 border-bottom: solid 2px black;
                 padding-bottom: 50px;
                 .javascript { 
-                    grid-area: JS;
+                    grid-area: "JS";
                     height: 100px;
                     width: 100px;
                     border: solid 1px black;
                 }
                 
                 .html { 
-                    grid-area: HTML; 
+                    grid-area: "HTML"; 
                     height: 100px;
                     width: 100px;
                     border: solid 1px black;
                 }
                 
                 .git { 
-                    grid-area: GIT;
+                    grid-area: "GIT";
                     height: 100px;
                     width: 100px;
                     border: solid 1px black; 
                 }
               
                 .css { 
-                    grid-area: CSS;
+                    grid-area: "CSS";
                     height: 100px;
                     width: 100px;
                     border: solid 1px black;
                 }
               
                 .npm { 
-                    grid-area: NPM;
+                    grid-area: "NPM";
                     height: 100px;
                     width: 100px;
                     border: solid 1px black; 
