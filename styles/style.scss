@@ -183,6 +183,58 @@ body {
 
         }
     }   
+    #tools {
+        .container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            .grid-wrapper {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: 10px 10px;
+                grid-template-areas: "HTML JS GIT NPM" "CSS JS GIT .";
+                border-bottom: solid 2px black;
+                padding-bottom: 50px;
+                .javascript { 
+                    grid-area: JS;
+                    height: 100px;
+                    width: 100px;
+                    border: solid 1px black;
+                }
+                
+                .html { 
+                    grid-area: HTML; 
+                    height: 100px;
+                    width: 100px;
+                    border: solid 1px black;
+                }
+                
+                .git { 
+                    grid-area: GIT;
+                    height: 100px;
+                    width: 100px;
+                    border: solid 1px black; 
+                }
+              
+                .css { 
+                    grid-area: CSS;
+                    height: 100px;
+                    width: 100px;
+                    border: solid 1px black;
+                }
+              
+                .npm { 
+                    grid-area: NPM;
+                    height: 100px;
+                    width: 100px;
+                    border: solid 1px black; 
+                }
+            }
+                         
+              
+        }
+    }
 }
 
 

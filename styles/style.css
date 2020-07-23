@@ -205,6 +205,72 @@ body #projects .container .flex-column-wrapper .flex-column:hover {
           transform: scale(1.1);
 }
 
+body #tools .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body #tools .container .grid-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: 10px 10px;
+      grid-template-areas: "HTML JS GIT NPM" "CSS JS GIT .";
+  border-bottom: solid 2px black;
+  padding-bottom: 50px;
+}
+
+body #tools .container .grid-wrapper .javascript {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: JS;
+  height: 100px;
+  width: 100px;
+  border: solid 1px black;
+}
+
+body #tools .container .grid-wrapper .html {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: HTML;
+  height: 100px;
+  width: 100px;
+  border: solid 1px black;
+}
+
+body #tools .container .grid-wrapper .git {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: GIT;
+  height: 100px;
+  width: 100px;
+  border: solid 1px black;
+}
+
+body #tools .container .grid-wrapper .css {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: CSS;
+  height: 100px;
+  width: 100px;
+  border: solid 1px black;
+}
+
+body #tools .container .grid-wrapper .npm {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: NPM;
+  height: 100px;
+  width: 100px;
+  border: solid 1px black;
+}
+
 @media screen and (max-width: 550px) {
   body .nav .hamburger {
     display: block;
