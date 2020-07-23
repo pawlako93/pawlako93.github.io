@@ -1,0 +1,67 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body .nav {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+body .nav .navbar {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: solid 2px black;
+}
+
+body .nav .navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body .nav .navbar a .nav-link {
+  padding: 10px;
+}
+
+body .nav .navbar a:hover {
+  background-color: black;
+  color: white;
+}
+
+body .nav .toggle {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+  body .nav .toggle {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    width: 100%;
+    height: 42px;
+    font-size: 18px;
+    color: #ffffff;
+    background: #000000;
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+  }
+  body .nav .toggle:hover {
+    background: #ffffff;
+    color: #000000;
+    border-bottom: solid 2px #000000;
+  }
+  body .nav .navbar {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
