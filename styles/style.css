@@ -117,7 +117,6 @@ body #home {
   height: auto;
   min-height: 0;
   padding-top: 0;
-  background-color: #F5F3F5;
 }
 
 body #home .container {
@@ -191,6 +190,11 @@ body #home .container .flex-column-wrapper .flex-column a {
 body #home .container .flex-column-wrapper .flex-column a:hover {
   background-color: black;
   color: white;
+}
+
+body #projects {
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f0f0f0));
+  background: linear-gradient(180deg, white 0%, #f0f0f0 100%);
 }
 
 body #projects .container {
@@ -282,6 +286,7 @@ body #projects .container .flex-column-wrapper .flex-column:hover {
 
 body #tools {
   text-align: center;
+  background-color: #f0f0f0;
 }
 
 body #tools .container {
@@ -299,7 +304,6 @@ body #tools .container .grid-wrapper {
       grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
-  border-bottom: solid 2px black;
   padding-bottom: 50px;
 }
 
@@ -373,9 +377,25 @@ body #tools .container .grid-wrapper .npm {
   border: solid 1px black;
 }
 
+body #contact {
+  height: 200px;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+}
+
+body #contact .container {
+  height: 200px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media screen and (max-width: 550px) {
   body .nav .hamburger {
     display: block;
+    position: relative;
     text-align: center;
     line-height: 40px;
     cursor: pointer;
@@ -394,6 +414,8 @@ body #tools .container .grid-wrapper .npm {
   }
   body .nav .navbar {
     display: none;
+    position: fixed;
+    top: 0;
   }
 }
 
