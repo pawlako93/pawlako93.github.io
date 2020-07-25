@@ -10,6 +10,6 @@ hamburger.addEventListener("click", () => {
 });
 
 window.addEventListener("load", () => {
-    loader.className += "hidden";
+    loader.className += " hidden";
     
 })

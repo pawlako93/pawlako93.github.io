@@ -5,6 +5,8 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f0f0f0));
+  background: linear-gradient(180deg, white 0%, #f0f0f0 100%);
 }
 
 body .nav {
@@ -102,7 +104,6 @@ body .loader {
       -ms-flex-align: center;
           align-items: center;
   z-index: 99;
-  overflow: hidden;
 }
 
 body .loader .container {
@@ -122,10 +123,10 @@ body .loader .container .hero-info {
 }
 
 body .hidden {
-  -webkit-animation: fadeOut 1.5s;
-          animation: fadeOut 1.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation: fadeOut 1s;
+          animation: fadeOut 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 body #home {
@@ -166,14 +167,19 @@ body #home .container .flex-column-wrapper .flex-column .home-image {
 }
 
 body #home .container .flex-column-wrapper .flex-column .home-image img {
-  border: solid 0.1px #000000;
-  border-radius: 35px;
   -webkit-box-shadow: 2px 18px 34px -15px rgba(0, 0, 0, 0.75);
           box-shadow: 2px 18px 34px -15px rgba(0, 0, 0, 0.75);
   vertical-align: middle;
   display: inline-block;
   max-width: 100%;
   height: auto;
+}
+
+body #home .container .flex-column-wrapper .flex-column .home-image img:hover {
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 body #home .container .flex-column-wrapper .flex-column .home-information {
