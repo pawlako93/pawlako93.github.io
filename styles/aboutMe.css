@@ -7,6 +7,8 @@ body {
   font-family: 'Quicksand', sans-serif;
   background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f0f0f0));
   background: linear-gradient(180deg, white 0%, #f0f0f0 100%);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body .nav {
@@ -119,7 +121,7 @@ body .loader .container {
 }
 
 body .loader .container .hero-info {
-  font-size: 100px;
+  font-size: 2rem;
 }
 
 body .hidden {
@@ -151,6 +153,7 @@ body #home .container .flex-column-wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 30px;
 }
 
 body #home .container .flex-column-wrapper .flex-column {
@@ -333,7 +336,10 @@ body #contact .container .contact-flex .icon {
     position: fixed;
     top: 0;
   }
-  body #tools .tech-list {
+  body .nav .toggle a {
+    color: black;
+  }
+  body .nav #tools .tech-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -344,20 +350,20 @@ body #contact .container .contact-flex .icon {
             justify-content: space-evenly;
     padding: 50px 20px;
   }
-  body #tools .tech-list .icon {
+  body .nav #tools .tech-list .icon {
     height: 100px;
     width: 100px;
     margin: 50px 20px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  body #tools .tech-list .icon img {
+  body .nav #tools .tech-list .icon img {
     width: 100%;
     height: 100%;
     -webkit-transition: ease-in-out 0.2s;
     transition: ease-in-out 0.2s;
   }
-  body #tools .tech-list .icon img:hover {
+  body .nav #tools .tech-list .icon img:hover {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     -webkit-transition: ease-in-out 0.2s;

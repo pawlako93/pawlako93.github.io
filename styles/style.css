@@ -1,10 +1,14 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
   font-family: 'Quicksand', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body .nav {
@@ -123,7 +127,7 @@ body .loader .container {
 }
 
 body .loader .container .hero-info {
-  font-size: 100px;
+  font-size: 2rem;
 }
 
 body .hidden {
@@ -151,7 +155,7 @@ body #hero .container {
   max-width: 1200px;
   height: auto;
   margin: auto;
-  text-align: right;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -270,6 +274,10 @@ body #projects .container .flex-column-wrapper {
   padding-bottom: 50px;
 }
 
+body #projects .container .flex-column-wrapper a {
+  margin: 0px;
+}
+
 body #projects .container .flex-column-wrapper .flex-column {
   -ms-flex-item-align: center;
       align-self: center;
@@ -277,10 +285,7 @@ body #projects .container .flex-column-wrapper .flex-column {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-align: left;
-  min-width: 220px;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 60%;
   border-radius: 0.60em;
   border: solid 1px black;
   display: -webkit-box;
@@ -297,12 +302,14 @@ body #projects .container .flex-column-wrapper .flex-column {
 }
 
 body #projects .container .flex-column-wrapper .flex-column .project-image {
-  background-image: url("/img/pokedex.PNG");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top-left-radius: 0.6em;
-  border-top-right-radius: 0.6em;
+  height: 100%;
+}
+
+body #projects .container .flex-column-wrapper .flex-column .project-image img {
+  border-top-left-radius: 0.60em;
+  border-top-right-radius: 0.60em;
+  vertical-align: middle;
+  width: 100%;
   height: 100%;
   border-bottom: solid 1px #000000;
 }
@@ -312,6 +319,9 @@ body #projects .container .flex-column-wrapper .flex-column .project-image h3 {
 }
 
 body #projects .container .flex-column-wrapper .flex-column .project-description {
+  background-color: white;
+  border-bottom-left-radius: 0.60em;
+  border-bottom-right-radius: 0.60em;
   text-align: center;
   width: 100%;
   padding: 10px;
